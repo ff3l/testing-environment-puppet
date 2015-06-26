@@ -1,0 +1,19 @@
+# IDE & System Related Files #
+.buildpath
+.project
+.settings
+.idea
+*~
+
+# OSX #
+._*
+.Spotlight-V100
+.Trashes
+.DS_Store
+
+# Windows #
+Thumbs.db
+Desktop.ini
+
+# Vagrant #
+/.vagrant
