@@ -1,0 +1,28 @@
+[submodule "modules/debnet"]
+	path = modules/debnet
+	url = https://github.com/rtib/tib-debnet.git
+	branch = 1.4.x
+[submodule "modules/dnsmasq"]
+	path = modules/dnsmasq
+	url = https://github.com/rlex/puppet-dnsmasq.git
+[submodule "modules/openvpn"]
+	path = modules/openvpn
+	url = https://github.com/luxflux/puppet-openvpn.git
+	branch = 2.x
+[submodule "modules/concat"]
+	path = modules/concat
+	url = https://github.com/puppetlabs/puppetlabs-concat.git
+	branch = 1.0.x
+[submodule "modules/stdlib"]
+	path = modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
+	branch = 4.6.x
+[submodule "modules/iptables"]
+	path = modules/iptables
+	url = https://github.com/arusso/puppet-iptables.git
+[submodule "modules/radvd"]
+	path = modules/radvd
+	url = https://github.com/fpletz/puppet-radvd.git
+[submodule "modules/sysctl"]
+	path = modules/sysctl
+	url = https://github.com/duritong/puppet-sysctl.git
