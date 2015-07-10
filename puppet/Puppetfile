@@ -1,0 +1,7 @@
+# Install puppetlabs/stdlib and keep it up to date with 'master'
+mod 'stdlib',
+  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib.git'
+
+# Install puppetlabs/ntp and keep it up to date with 'master'
+mod 'ntp',
+  :git => 'https://github.com/puppetlabs/puppetlabs-ntp.git'
