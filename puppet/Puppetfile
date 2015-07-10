@@ -1,7 +1,32 @@
 # Install puppetlabs/stdlib and keep it up to date with 'master'
 mod 'stdlib',
-  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib.git'
+  :git => 'https://github.com/puppetlabs/puppetlabs-stdlib.git',
+  :branch => '4.6.x'
 
 # Install puppetlabs/ntp and keep it up to date with 'master'
 mod 'ntp',
   :git => 'https://github.com/puppetlabs/puppetlabs-ntp.git'
+
+# Install puppetlabs/concat and keep it up to date with 'master'
+mod 'concat',
+  :git => 'https://github.com/puppetlabs/puppetlabs-concat.git',
+  :branch => '1.0.x'
+
+mod 'debnet',
+  :git => 'https://github.com/rtib/tib-debnet.git',
+  :branch => '1.4.x'
+
+mod 'dnsmaq',
+    :git => 'https://github.com/rlex/puppet-dnsmasq.git'
+
+mod 'openvpn',
+    :git => 'https://github.com/luxflux/puppet-openvpn.git'
+
+mod 'iptables',
+    :git => 'https://github.com/arusso/puppet-iptables.git'
+
+mod 'radvd',
+    :git => 'https://github.com/fpletz/puppet-radvd.git'
+
+mod 'sysctl',
+    :git => 'https://github.com/duritong/puppet-sysctl.git'
