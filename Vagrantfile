@@ -72,17 +72,24 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #   cf.policy_server_address = "10.0.2.15"
   # end
 
+  # r10k plugin to deploy puppet modules
+  config.r10k.puppet_dir = "puppet"
+  config.r10k.module_path = "puppet/vendor"
+  config.r10k.puppetfile_path = "puppet/Puppetfile"
+
   # Enable provisioning with Puppet stand alone.  Puppet manifests
   # are contained in a directory path relative to this Vagrantfile.
   # You will need to create the manifests directory and a manifest in
   # the file default.pp in the manifests_path directory.
   #
+
+  # Provision the machine with the appliction
   config.vm.provision "puppet" do |puppet|
-    puppet.manifests_path    = "manifests"
-    puppet.manifest_file     = "default.pp"
-    puppet.module_path       = "modules"
-    puppet.hiera_config_path = "hiera.yaml"
+    puppet.manifests_path = "puppet/manifests"
+    puppet.manifest_file  = "default.pp"
+    puppet.module_path = ["puppet/modules", "puppet/vendor"]
     puppet.working_directory = "/tmp/vagrant-puppet"
+    puppet.hiera_config_path = "hiera.yaml"
   end
 
   # Enable provisioning with chef solo, specifying a cookbooks path, roles
