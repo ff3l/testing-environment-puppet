@@ -1,3 +1,3 @@
 node 'vagrant.example.com' {
-    notify { "asdf":}
+    include profiles::gateway
 }

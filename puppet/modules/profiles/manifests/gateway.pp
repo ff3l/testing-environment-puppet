@@ -1,5 +1,5 @@
 class profiles::gateway (
-    ) {
+    ) inherits profiles::base {
 
     package {'batctl':
         ensure => installed,
