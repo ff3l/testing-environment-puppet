@@ -17,3 +17,6 @@ Desktop.ini
 
 # Vagrant #
 /.vagrant
+
+# Vendor Directory #
+/vendor/*
